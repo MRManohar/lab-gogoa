@@ -1,7 +1,4 @@
 package testing;
-
-/* Uncomment the below code to test your application
-
 import static org.junit.Assert.*;
 
 import java.time.LocalDate;
@@ -64,10 +61,10 @@ public class TestFareCalculator {
 	public void testFlightMethod() {
 		LocalDate ld = LocalDate.of(2020, 02, 03);
 		LocalDate ld1 = LocalDate.of(2020, 02, 05);
-		Flight flight = new Flight(2, 10000, "economy", ld, ld1,"one-way");
+		Flight flight = new Flight(2, 10000, ld, ld1,"one-way");
 		assertEquals(20000,fare.book(flight),0);
 		try {
-			Flight flight1 = new Flight(0, 0, null, null, null,null);
+			Flight flight1 = new Flight(0, 0, null, null,null);
 			fare.book(flight1);
 		}
 		catch(Exception e) {
@@ -89,4 +86,3 @@ public class TestFareCalculator {
 		}
 	}
 }
-*/

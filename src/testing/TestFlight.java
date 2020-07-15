@@ -1,7 +1,5 @@
 package testing;
 
-/* Uncomment the below code to test your application
-
 import model.Flight;
 import java.time.LocalDate;
 import static org.junit.Assert.*;
@@ -10,7 +8,7 @@ import org.junit.Test;
 public class TestFlight {
 	LocalDate ld = LocalDate.of(2020, 02, 03);
 	LocalDate ld1 = LocalDate.of(2020, 02, 05);
-	Flight flight = new Flight(2, 10000, "economy", ld, ld1,"one-way");
+	Flight flight = new Flight(2, 10000,ld,ld1,"one-way");
 
 	@Test
 	public void testGetNoOfPersonMethod() {
@@ -61,5 +59,3 @@ public class TestFlight {
 		}
 	}
 }
-
-*/
